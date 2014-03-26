@@ -5,5 +5,3 @@ def sum_of_cubes(a,b)
 	end
 	sum = num_array.inject(:+)
 end
-
-puts sum_of_cubes(3,5)
