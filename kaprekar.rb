@@ -1,0 +1,3 @@
+def kaprekar?(k)
+	
+end
