@@ -10,6 +10,11 @@ In short, for a Kaprekar number k with n-digits, if you square it and add the ri
 
 def kaprekar?(k)
 	n = k.to_s.length
+	square = k**2
+	square_string = square.to_s
+	last_n = square_string.split(//).last(n).join
+	first_n = square_string.split(//).first(square.to_s.length - last_n.length).join
+	(last_n.to_i + first_n.to_i== k) ? "#{k} is a kaprekar number" : "#{k} is not a kaprekar number. Wuan Wuan Wuan..."
 end
 
-puts kaprekar?(8453)
+puts kaprekar?(9)
